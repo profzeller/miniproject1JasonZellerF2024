@@ -7,6 +7,11 @@ from datetime import datetime, timedelta
 import numpy as np
 import matplotlib.pyplot as plt
 import copy
+import os
+
+os.makedirs("charts", exist_ok=True)
+
+
 # Get today's date
 today = datetime.now()
 
@@ -14,6 +19,9 @@ today = datetime.now()
 ten_days_ago = today - timedelta(days=15)
 
 mytickers = ["MSFT", "AAPL", "NVDA", "GME", "AMC"]
+
+
+
 
 
 mytickers.sort()
